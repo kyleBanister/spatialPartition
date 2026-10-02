@@ -132,7 +132,7 @@ namespace SpatialPartitionPattern {
                     SpawnWithoutGrid();
                 }
             }
-            GUILayout.Label("Update time (seconds): " + updateTime, GUILayout.Width(200));
+            GUILayout.Label("Update time (seconds): " + updateTime, GUILayout.Width(250));
         }
     }
 }
