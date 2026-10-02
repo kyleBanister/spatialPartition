@@ -4,6 +4,7 @@ using System.Collections;
 namespace SpatialPartitionPattern {
     public class Friendly : Soldier {
         public Friendly(GameObject soldierObj, float mapWidth) {
+            this.soldierObj = soldierObj;
             this.soldierTrans = soldierObj.transform;
             this.walkSpeed = 2f;
         }

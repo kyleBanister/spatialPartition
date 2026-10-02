@@ -5,7 +5,7 @@ namespace SpatialPartitionPattern {
     public class Grid {
         int cellSize;
 
-        Soldier[,] cells; 
+        Soldier[,] cells;
 
         public Grid(int mapWidth, int cellSize) {
             this.cellSize = cellSize;

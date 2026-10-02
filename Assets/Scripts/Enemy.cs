@@ -8,9 +8,8 @@ namespace SpatialPartitionPattern {
         float mapWidth;
         Grid grid;
 
-
-        //Init enemy
         public Enemy(GameObject soldierObj, float mapWidth, Grid grid) {
+            this.soldierObj = soldierObj;
             this.soldierTrans = soldierObj.transform;
             this.soldierMeshRenderer = soldierObj.GetComponent<MeshRenderer>();
             this.mapWidth = mapWidth;
@@ -38,7 +37,6 @@ namespace SpatialPartitionPattern {
         void GetNewTarget() {
             currentTarget = new Vector3(Random.Range(0f, mapWidth), 0.5f, Random.Range(0f, mapWidth));
 
-            //Rotate towards the target
             soldierTrans.rotation = Quaternion.LookRotation(currentTarget - soldierTrans.position);
         }
     }
